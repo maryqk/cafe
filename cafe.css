@@ -4,7 +4,64 @@
  * Copyright 2014-2021 Froala Labs
  */
 
-.fr-clearfix::after {
+/*CSS для бронювання столиків в нашому ресторані*/
+.flex-row {
+  height: 100vh;
+  background: url(./images/cafe.jpg) no-repeat;
+  background-size: cover;
+}
+
+.booking-form h1 {
+  display: inline;
+  color: #ffffff;
+  
+}
+ 
+.booking-form p {
+  color: rgb(255, 255, 255);
+}
+
+.booking-form {
+  width: 25%;
+  padding: 120px 30px 30px 30px;
+}
+
+.booking-form form input,
+.booking-form form textarea {
+  width: 100%;
+  outline: none;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 12px 10px;
+  font-size: 16px;
+  color-scheme: rgb(104, 173, 206);
+  margin-bottom: 10 px;
+}
+.booking-form form input::placeholder,
+.booking-form form textarea::placeholder {
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+.booking-form form textarea {
+  resize: vertical;
+  overflow: hidden;
+  min-height: 2rem;
+}
+
+.btn1 {
+  display: inline-block;
+  background-color: white;
+  border: 1px solid grey;
+  color: black;
+  /* width: 100%; */
+  /* font-size: 18px; */
+  /* padding: 20px 30px; */
+  margin-top: 10px;
+  text-align: center;
+  position: relative;
+}
+/*Кінец CSS для бронювання*/
+
+ .fr-clearfix::after {
   clear: both;
   display: block;
   content: "";
@@ -70,7 +127,8 @@
       .fr-view table td:empty, .fr-view table th:empty {
         height: 20px; }
       .fr-view table td.fr-highlighted, .fr-view table th.fr-highlighted {
-        border: 1px double red; }
+        border: 1px double blue
+    ; }
       .fr-view table td.fr-thick, .fr-view table th.fr-thick {
         border-width: 2px; }
     .fr-view table th {
